@@ -3,27 +3,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Your page description here">
-    <meta name="author" content="Your name">
-    <title>Your Page Title</title>
+    <meta name="description" content="Explore unique insights and creative solutions.">
+    <meta name="author" content="John Doe">
+    <title>Innovative Solutions</title>
 
     <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 
     <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/img/logo.png" type="image/png">
 
-    <!-- Open Graph (OG) tags for social media sharing -->
-    <meta property="og:title" content="Your Page Title">
-    <meta property="og:description" content="Description for social media">
-    <meta property="og:image" content="image-url.jpg">
-    <meta property="og:url" content="https://yourwebsite.com">
+    <!-- Twitter Card Meta -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Innovative Solutions">
+    <meta name="twitter:description" content="Leading innovation with cutting-edge services.">
+    <meta name="twitter:image" content="assets/img/social-image.png">
 
-    <!-- External Font (Optional) -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- External Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 
     <!-- External JavaScript -->
-    <script src="script.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
 </head>
 <body>
 
@@ -31,9 +31,10 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#team">Our Team</a></li>
+                <li><a href="#blog">Blog</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -42,30 +43,58 @@
     <!-- Main Content Section -->
     <main>
         <section id="home">
-            <h1>Welcome to Your Website</h1>
-            <p>This is a boilerplate webpage that you can use to build your site.</p>
+            <h1>Welcome to Innovative Solutions</h1>
+            <p>We design solutions that redefine industries and push the boundaries of what's possible.</p>
         </section>
 
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Information about your company or project.</p>
+        <section id="portfolio">
+            <h2>Our Portfolio</h2>
+            <div class="gallery">
+                <div class="gallery-item"><img src="assets/img/project1.jpg" alt="Project 1"></div>
+                <div class="gallery-item"><img src="assets/img/project2.jpg" alt="Project 2"></div>
+                <div class="gallery-item"><img src="assets/img/project3.jpg" alt="Project 3"></div>
+            </div>
         </section>
 
-        <section id="services">
-            <h2>Our Services</h2>
-            <p>Details about the services you offer.</p>
+        <section id="team">
+            <h2>Meet Our Team</h2>
+            <p>Our team is composed of experts across various fields, all committed to delivering top-notch services.</p>
+            <ul>
+                <li><strong>Jane Smith</strong> - CEO</li>
+                <li><strong>Mike Johnson</strong> - Lead Developer</li>
+                <li><strong>Emily Davis</strong> - Marketing Specialist</li>
+            </ul>
+        </section>
+
+        <section id="blog">
+            <h2>From Our Blog</h2>
+            <p>Stay updated with the latest trends in technology and innovation.</p>
         </section>
 
         <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Email: info@example.com</p>
-            <p>Phone: (123) 456-7890</p>
+            <h2>Get in Touch</h2>
+            <form action="submit-form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
         </section>
     </main>
 
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Your Website Name. All rights reserved.</p>
+        <p>&copy; 2024 Innovative Solutions. All rights reserved. | <a href="privacy-policy.html">Privacy Policy</a></p>
+        <p>Follow us on: 
+            <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a> | 
+            <a href="https://linkedin.com/company/yourcompany" target="_blank">LinkedIn</a>
+        </p>
     </footer>
 
 </body>
